@@ -4,7 +4,7 @@
   "description": "trabajar con asincronismo en JS",
   "main": "src/index.js",
   "scripts": {
-   "callback": "node src/callback/index.js"
+    "callback": "node src/callback/index.js"
   },
   "keywords": [
     "callbacks",
@@ -12,5 +12,8 @@
     "async"
   ],
   "author": "Guadalupe Gomez <g.gop112019@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
