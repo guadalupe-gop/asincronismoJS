@@ -1,12 +1,14 @@
 // ES6
 const somethingWillHappen = () => {
   return new Promise((resolve, reject) => {
-    if (false) {
+    if (true) {
       resolve("Hey!");
     } else {
       reject("Whoooops!");
     }
   });
+  // .then((response) => console.log(response))
+  // .catch((error) => console.error(error));
 };
 
 somethingWillHappen()
@@ -29,3 +31,11 @@ const somethingWillHappen2 = () => {
 somethingWillHappen2()
   .then((response) => console.log(response))
   .catch((err) => console.log(err));
+
+Promise.all([somethingWillHappen(), somethingWillHappen2()])
+  .then((response) => {
+    console.log("Array of results", response);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
