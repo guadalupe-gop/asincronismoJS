@@ -1,3 +1,7 @@
+function Error() {
+  console.log("Lo siento putito, no se pudo hacer la consulta de la API 🤣");
+}
+
 const doSomethingAsync = () => {
   return new Promise((resolve, reject) => {
     true
@@ -19,8 +23,8 @@ const anotherFunction = async () => {
   try {
     const something = await doSomethingAsync();
     console.log(something);
-  } catch (error) {
-    console.log(error);
+  } catch (Error) {
+    // console.log(error);
   }
 };
 
